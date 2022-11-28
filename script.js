@@ -1,7 +1,7 @@
 document.getElementById("Tip").value = "$" + "0.00"
 document.getElementById("Total").value = "$" + "0.00"
-document.getElementById("bill").value = 0
-document.getElementById("people").value = 0
+document.getElementById("bill").value = ""
+document.getElementById("people").value = ""
 
 function five() {
     document.getElementById("btnfive").value = 5
@@ -230,14 +230,14 @@ function calc() {
 document.getElementById("people").addEventListener("keyup", calc)
 
 function reset() {
-    document.getElementById("bill").value = 0
+    document.getElementById("bill").value = ""
     document.getElementById("btnfive").value = ""
     document.getElementById("btnten").value = ""
     document.getElementById("btnfifteen").value = ""
     document.getElementById("btntwentyfive").value = ""
     document.getElementById("btnfifty").value = ""
     document.getElementById("btnCustm").value = ""
-    document.getElementById("people").value = 0
+    document.getElementById("people").value = ""
     document.getElementById("CustmVal").value = ""
     document.getElementById("CustmVal").style.display = "none"
     document.getElementById("btnCustm").style.display = "block"
