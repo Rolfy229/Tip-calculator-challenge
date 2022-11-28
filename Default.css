@@ -1,0 +1,373 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --Strong-cyan: hsl(172, 67%, 45%);
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+    --red: rgb(255, 0, 0);
+    --blue: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+.Container1 {
+    background-color: var(--White);
+    border-radius: 25px 25px 0px 0px;
+    padding: 20px 24px 0px 24px;
+    min-height: 88vh;
+}
+
+.bill--text {
+    color: var(--Dark-grayish-cyan);
+    padding: 5px 0px;
+}
+
+#bill {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    background-image: url(images/icon-dollar.svg);
+    background-position: 15px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    border-color: var(--Very-light-grayish-cyan);
+    border-style: solid;
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 8px;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#bill:hover {
+    border-color: var(--Strong-cyan);
+}
+
+.tip--text {
+    color: var(--Dark-grayish-cyan);
+    padding: 30px 0px 15px 0px;
+}
+
+.btn--container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+
+}
+
+#btnfive {
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    width: 40vw;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btnfive:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+#btnten {
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    width: 40vw;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btnten:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+
+#btnfifteen {
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    width: 40vw;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btnfifteen:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+#btntwentyfive {
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    width: 40vw;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btntwentyfive:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+
+#btnfifty {
+    color: var(--White);
+    background-color: var(--Very-dark-cyan);
+    width: 40vw;
+    height: 50px;
+    border-radius: 8px;
+    border-color: var(--Very-dark-cyan);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btnfifty:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+#btnCustm {
+    color: var(--Dark-grayish-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    border-color: var(--Very-light-grayish-cyan);
+    border-style: solid;
+    border-radius: 8px;
+    border-color: var(--Very-light-grayish-cyan);
+    width: 40vw;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#btnCustm:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+    border-color: var(--Strong-cyan);
+}
+
+#CustmVal {
+    display: none;
+    background-color: var(--Very-light-grayish-cyan);
+    border-color: var(--Very-light-grayish-cyan);
+    border-style: solid;
+    border-radius: 8px;
+    padding: 0px 8px;
+    width: 40vw;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: end;
+}
+
+.Npeople--Err {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px 5px 0px;
+    width: 100%;
+}
+
+.Npeople--Text {
+    color: var(--Dark-grayish-cyan);
+    font-size: 16px;
+}
+
+#NpeopleErr {
+    color: var(--red);
+    font-size: 16px;
+    margin: 0px 0px 0px auto;
+}
+
+#people {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Very-light-grayish-cyan);
+    background-image: url(images/icon-person.svg);
+    background-position: 15px;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    border-color: var(--Very-light-grayish-cyan);
+    border-style: solid;
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 8px;
+    text-align: end;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#people:hover {
+    border-color: var(--Strong-cyan);
+}
+
+.Container2 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 20px;
+    margin: 30px 0px 0px 0px;
+    padding: 40px 25px 20px 25px;
+}
+
+.TipAmountPers--Container1 {
+    display: flex;
+    margin: 0px 0px 30px auto;
+}
+
+.TipAmount--Text {
+    color: var(--White);
+    font-size: 18px;
+}
+
+.TipAmountPers--Text {
+    color: var(--Grayish-cyan);
+    font-size: 14px;
+}
+
+#Tip {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 0px auto;
+    font-size: 35px;
+    color: var(--Strong-cyan);
+}
+
+.TotalPers--Container1 {
+    display: flex;
+    margin: 0px 0px 25px auto;
+}
+
+.Total--Text {
+    color: var(--White);
+    font-size: 18px;
+}
+
+.TotalPers--Text {
+    color: var(--Grayish-cyan);
+    font-size: 14px;
+}
+
+#Total {
+    margin: 0px 0px 10px auto;
+    font-size: 35px;
+    color: var(--Strong-cyan);
+}
+
+#reset {
+    background-Color: var(--Dark-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.attribution {
+    margin: auto;
+    font-size: 10px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+@media screen and (min-width:900px) {
+    body {
+        align-items: center;
+        padding: 0px 50px 100px 50px;
+    }
+
+    .logo {
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .Container1 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 60px;
+        border-radius: 25px;
+        padding: 40px;
+    }
+
+    .Container--1A {
+        width: 35vw;
+        margin: auto;
+    }
+
+    .btn--container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        width: auto;
+    }
+
+    #btnfive,
+    #btnten,
+    #btnfifteen,
+    #btntwentyfive,
+    #btnfifty,
+    #btnCustm,
+    #CustmVal {
+        width: 12vw;
+        padding: 0vw;
+    }
+
+    .Container2 {
+        background-color: var(--Very-dark-cyan);
+        border-radius: 15px;
+        width: 35vw;
+        margin: auto;
+        padding: 50px 60px;
+    }
+
+    #Npeople--Err {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0px 0px 50px;
+    }
+
+    #reset {
+        width: 100%;
+        margin: 100px 0px 10px 0px;
+    }
+}
